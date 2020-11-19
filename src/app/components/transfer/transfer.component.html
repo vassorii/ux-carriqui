@@ -1,0 +1,16 @@
+<form
+  [formGroup]="group">
+
+  <input formControlName="account">
+</form>
+
+<button type="button" mat-raised-button (click)="obtainBalance()">Obtener balance</button>
+<br><br>
+<input type="text" [(ngModel)]="account" placeholder="Cuenta">
+<button type="button" mat-raised-button (click)="getBalance()">Obtener balance</button>
+<br><br>
+<input type="text" [(ngModel)]="from" placeholder="Desde">
+<input type="text" [(ngModel)]="fromVal" placeholder="Valor">
+<input type="text" [(ngModel)]="to" placeholder="A">
+<br>
+<button type="button" mat-raised-button (click)="sendTransaction()">Obtener balance</button>
